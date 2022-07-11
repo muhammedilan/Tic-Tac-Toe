@@ -89,7 +89,7 @@ function checkTie() {
   for (let i = 0; i <= 8; i++) {
     values.push(box[i].innerText);
   }
-  if (!values.includes("") && endGame !== true) {
+  if (!values.includes("") && winner.length > 0) {
     alert("Tie");
     location.reload();
   }
